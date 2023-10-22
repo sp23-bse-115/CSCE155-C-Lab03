@@ -1,6 +1,7 @@
 /**
- * Author:
- * Date:
+ * Author:ABBASS KHAN
+ * 
+ * Date:2023/10/22
  *
  * This programs provides basic calculator functionality
  * allowing a user to enter two operands and to compute
@@ -13,6 +14,7 @@
 
 int main(int argc, char **argv) {
 
+  while(1){ 
   double a, b, result;
   int choice;
 
@@ -32,21 +34,32 @@ int main(int argc, char **argv) {
   scanf("%d", &choice);
 
   if(choice == 1) {
-    printf("%f", a + b);
+    printf("%f\n", a + b);
   } else if(choice == 2) {
     result = a - b;
-    printf("%f", result);
+    printf("%f\n", result);
   } else if(choice == 3) {
-    //TODO: handle this case (multiplication)
+    printf("%f\n",a * b);
   } else if(choice == 4) {
-    //TODO: handle this case (division)
+    printf("%f\n",a / b);
   } else if(choice == 5) {
-    //TODO: handle this case (minimum)
+    result(a < b)? a : b;
+    printf("min=%f\n", result);
   } else if(choice == 6) {
-    //TODO: handle this case (log_a(b))
+    result = log(b) / log(a);
+    printf("loga(b) = %f\n",result);
   } else {
     printf("Please input a valid operator next time");
   }
+  char Chooice;
+  printf("You want to quite programe......\n");
+  scanf("%c", &Choice);
+  
+  if(Choice == 'y' || Choice == 'Y'){
+    break;
+  }
 
+printf("_____________\n");
+__
   return 0;
 }
